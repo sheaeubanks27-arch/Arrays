@@ -1,6 +1,7 @@
 public class Arrays {
 
     public int[] nums;
+    public int total;
 
 
     public static void main(String[] args) {
@@ -30,6 +31,8 @@ public class Arrays {
         displayArray();
         randomNums();
         sumArray();
+        averageNum();
+        maxNum();
     }
     //todo: make a method called displayArray that prints all of the numbers in the array
     //only use one sout
@@ -51,10 +54,36 @@ public class Arrays {
     //sout the answer
 
     public void sumArray(){
-        int total = 0;
+        //int total = 0;
         for(int n = 0; n < nums.length; n++){
             total = total + nums[n];
         }
         System.out.println(total);
     }
+
+    public void averageNum(){
+        int average = 0;
+        for(int a = 0; a < nums.length; a++){
+            average = (average + total)/nums[a];
+
+        }
+
+        System.out.println(average);
+    }
+
+    public void maxNum(){
+        int max = 0;
+        for(int m = nums.length;;){
+            max = max + m;
+        }
+
+      //  System.out.println(max);
+    }
+
+   // public void minNum(){
+        //int min = 0;
+        //for(int k = nums)
+
+
+    // }
 }
