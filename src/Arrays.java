@@ -2,6 +2,7 @@ public class Arrays {
 
     public int[] nums;
     public int total;
+    public Astronaut[] astros;
 
 
     public static void main(String[] args) {
@@ -13,6 +14,8 @@ public class Arrays {
     public Arrays(){
 
         nums = new int[10];
+        astros = new Astronaut[7];
+
         nums[9] = 11;
         nums[8] = 10;
         nums[7] = 9;
@@ -32,8 +35,25 @@ public class Arrays {
         randomNums();
         sumArray();
         averageNum();
-        maxNum();
+       // maxNum();
+        System.out.println("hu");
+        minNum();
+
+        Astronaut a1 = new Astronaut();
+        a1.printInfo();
+        astros[4] = new Astronaut();
+        astros[4].eyes = 10;
+        astros[4].name = "Tom";
+        astros[4].printInfo();
+
+
+
+     //   System.out.println(astros[4]);
+
     }
+
+
+
     //todo: make a method called displayArray that prints all of the numbers in the array
     //only use one sout
 
@@ -80,10 +100,14 @@ public class Arrays {
       //  System.out.println(max);
     }
 
-   // public void minNum(){
-        //int min = 0;
-        //for(int k = nums)
+    public void minNum(){
+        int smallest = nums[0];
+        for(int k = 0; k < nums.length; k++){
+            if (nums[k]< smallest) {
+                smallest = nums[k];
+            }
+        }
+        System.out.println("min: " + smallest);
 
-
-    // }
+     }
 }
